@@ -1,6 +1,6 @@
 'use client'
 
-import styles from '@/assets/styles/module/TopBar.module.scss';
+import styles from '@/styles/module/TopBar.module.scss';
 import { IoMdSearch } from 'react-icons/io';
 import { FaUserCircle } from 'react-icons/fa';
 import { BsMoon, BsSun } from 'react-icons/bs';

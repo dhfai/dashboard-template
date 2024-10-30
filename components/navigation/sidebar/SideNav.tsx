@@ -1,7 +1,7 @@
 
 'use client'
 import { usePathname } from 'next/navigation';
-import styles from '@/assets/styles/module/SideNav.module.scss';
+import styles from '@/styles/module/SideNav.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaTelegramPlane } from 'react-icons/fa';

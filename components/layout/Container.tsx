@@ -1,5 +1,5 @@
 
-import styles from '@/assets/styles/module/Container.module.scss'
+import styles from '@/styles/module/Container.module.scss'
 
 
 export default function Container({

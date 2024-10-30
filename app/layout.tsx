@@ -3,7 +3,7 @@ import SideNav from "@/components/navigation/sidebar/SideNav";
 import TopBar from "@/components/navigation/topbar/TopBar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import '@/assets/styles/global/global.scss';
+import '@/styles/global/global.scss';
 
 const montserratRegular = localFont({
   src: "./fonts/Montserrat-Regular.ttf",
