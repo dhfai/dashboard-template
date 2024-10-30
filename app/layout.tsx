@@ -1,16 +1,25 @@
+import Container from "@/components/layout/Container";
+import SideNav from "@/components/navigation/sidebar/SideNav";
+import TopBar from "@/components/navigation/topbar/TopBar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import '@/assets/styles/global/global.scss';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const montserratRegular = localFont({
+  src: "./fonts/Montserrat-Regular.ttf",
+  variable: "--font-montserrat-regular",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const montserratBold = localFont({
+  src: "./fonts/Montserrat-Bold.ttf",
+  variable: "--font-montserrat-bold",
   weight: "100 900",
+});
+
+const poppinsRegular = localFont({
+    src: "./fonts/Poppins-Regular.ttf",
+    variable: "--font-poppins",
+    weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className={`${montserratRegular} ${montserratBold} ${poppinsRegular}`}>
+        <SideNav />
+        <TopBar />
+        <Container>
+            {children}
+        </Container>
       </body>
     </html>
   );

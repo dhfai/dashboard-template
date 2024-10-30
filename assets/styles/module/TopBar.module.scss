@@ -1,0 +1,61 @@
+@import '../global/Color.scss';
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: $bg-color;
+    color: white;
+    padding: 0 20px;
+    margin-left: 90px;
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 15px;
+        border-radius: 10px;
+        width: 300px;
+        max-width: 40%;
+        height: 40px;
+        background-color: white;
+
+        input {
+            border: none;
+            background-color: transparent;
+            color: white;
+            width: 100%;
+            height: 30px;
+            outline: none;
+
+            &::placeholder {
+                color: #cccccc;
+            }
+        }
+
+        .searchIcon {
+            font-size: 1.5rem;
+            color: #000;
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .profileImage {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+
+        .modeSwitch {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: black;
+        }
+    }
+}
